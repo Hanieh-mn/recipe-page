@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* padding: 30px; */
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 720px;
+    height: auto;
+    padding: 30px;
+    border-radius: 13px;
+    margin: 100px;
+}
+
+/* image */
+
+.image img{
+    width: 100%;
+    border-radius: 6px;
+    /* height: 250px; */
+}
+
+/* title */
+
+.title {
+    background-color: #fefefe;
+    border-radius: 6px;
+}
+
+.title h1 {
+    font-family: 'Young Serif', serif;
+    margin-top: 30px;
+    font-size: 38px;
+    letter-spacing: 1px;
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
+}
+
+.title p {
+    color: hsl(24, 5%, 18%);
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 22px;
+    /* font-size: 15px; */
+}
+
+/* preparation-time */
+
+.preparation-time {
+    background-color: hsl(330, 100%, 98%);
+    margin-top: 30px;
+    border-radius: 13px;
+}
+
+.preparation-time h2 {
+    color: hsl(332, 51%, 32%);
+    padding-top: 30px;
+    font-size: 19.2px;
+    margin-left: 26px;
+}
+
+.preparation-time ul {
+    font-size: 12px;
+    color: hsl(332, 51%, 32%);
+    /* padding: 20px 0; */
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-left: 48px;
+}
+
+.preparation-time li {
+    margin-top: 10px;
+}
+
+.preparation-time span {
+    font-weight: bold;
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    margin-left: 18px;
+}
+
+.preparation-time small {
+    color: hsl(24, 5%, 18%);
+    font-size: 16px;
+}
+
+/* ingredients */
+
+.ingredients {
+    background-color: #fefefe;
+    border-radius: 6px;
+}
+
+.ingredients h2{
+    font-family: 'Young Serif', serif;
+    color: hsl(14, 45%, 36%);
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.ingredients ul {
+    margin-left: 22px;
+    font-size: 12px;
+    margin-top: 20px;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients li {
+    margin-top: 10px;
+}
+
+.ingredients span {
+    margin-left: 20px;
+    font-size: 15.8px;
+    color: hsl(24, 5%, 18%);
+}
+
+/* instructions */
+
+.instructions {
+    background-color: #fefefe;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.instructions h2 {
+    font-family: 'Young Serif', serif;
+    font-size: 28px;
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions ul {
+    margin-top: 20px;
+}
+
+.instructions ul li{
+  margin-top: 10px;
+  display: flex;
+}
+
+.number {
+    margin-left: 5px;
+    font-size: 18px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.instructions .title{
+    margin-left: 22px;
+}
+
+.instructions .title span {
+    color: hsl(24, 5%, 18%);
+    font-weight: 700;
+}
+
+.instructions .title {
+    line-height: 22px;
+}
+
+/* nutrition */
+
+.nutrition {
+    margin-top: 20px;
+    background-color: #fefefe;
+    border-radius: 6px;
+}
+
+.nutrition p {
+    font-size: 16px;
+}
+
+.nutrition h2 {
+    font-family: 'Young Serif', serif;
+    font-size: 28px;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition p {
+    margin-top: 20px;
+    color: hsl(24, 5%, 18%);
+}
+
+.values {
+    display: grid;
+    grid-template-columns: 1fr 1.06fr;
+    margin-top: 15px;
+    gap: 30px;
+}
+
+.values h3 {
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.values span {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+.calories {
+    margin-top: 30px;
+}
