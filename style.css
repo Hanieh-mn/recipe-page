@@ -12,9 +12,6 @@ body {
     background-color: hsl(30, 54%, 90%);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* height: 100vh; */
-    /* padding: 30px; */
 }
 
 .container {
@@ -31,7 +28,6 @@ body {
 .image img{
     width: 100%;
     border-radius: 6px;
-    /* height: 250px; */
 }
 
 /* title */
@@ -55,7 +51,6 @@ body {
     font-size: 16px;
     margin-top: 15px;
     line-height: 22px;
-    /* font-size: 15px; */
 }
 
 /* preparation-time */
@@ -64,6 +59,7 @@ body {
     background-color: hsl(330, 100%, 98%);
     margin-top: 30px;
     border-radius: 13px;
+    padding: 0 10px;
 }
 
 .preparation-time h2 {
@@ -76,7 +72,6 @@ body {
 .preparation-time ul {
     font-size: 12px;
     color: hsl(332, 51%, 32%);
-    /* padding: 20px 0; */
     padding-top: 5px;
     padding-bottom: 30px;
     margin-left: 48px;
@@ -84,21 +79,19 @@ body {
 
 .preparation-time li {
     margin-top: 10px;
+    color: hsl(24, 5%, 18%);
+    font-size: 16px;
+    padding-left: 18px;
+    line-height: 25px;  
 }
 
 .preparation-time span {
     font-weight: bold;
     color: hsl(30, 10%, 34%);
     font-size: 16px;
-    margin-left: 18px;
 }
 
-.preparation-time small {
-    color: hsl(24, 5%, 18%);
-    font-size: 16px;
-}
-
-/* ingredients */
+/* ingredients ***************************/
 
 .ingredients {
     background-color: #fefefe;
@@ -122,15 +115,16 @@ body {
 
 .ingredients li {
     margin-top: 10px;
+    padding-left: 20px;
+    line-height: 25px;
 }
 
 .ingredients span {
-    margin-left: 20px;
     font-size: 15.8px;
     color: hsl(24, 5%, 18%);
 }
 
-/* instructions */
+/* instructions ********************************/
 
 .instructions {
     background-color: #fefefe;
@@ -160,20 +154,17 @@ body {
     font-weight: 600;
 }
 
-.instructions .title{
+.instructions .description2{
     margin-left: 22px;
+    line-height: 22px;
 }
 
-.instructions .title span {
+.instructions .description2 span {
     color: hsl(24, 5%, 18%);
     font-weight: 700;
 }
 
-.instructions .title {
-    line-height: 22px;
-}
-
-/* nutrition */
+/* nutrition *********************************/
 
 .nutrition {
     margin-top: 20px;
@@ -217,4 +208,48 @@ body {
 
 .calories {
     margin-top: 30px;
+}
+
+/* responsive ******************************/
+
+@media only screen and (max-width:768px) {
+
+    .container {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .wrapper {
+        padding: 30px;
+    }
+
+    .image img {
+        border-radius: 0;
+    }
+
+    .values {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .title h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width:494px) {
+    .title h1 {
+        font-size: 28px;
+    }
+
+    .preparation-time h2 {
+        margin-left: 17px;
+    }
+    
+    .preparation-time ul {
+        margin-left: 30px;
+    }
 }
